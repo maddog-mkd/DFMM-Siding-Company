@@ -152,7 +152,8 @@ h3, h4, h5, h6 {
     background: var(--color3);
 }
 
-#p-header h2 {
+#p-header h2,
+#p-header h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -294,9 +295,7 @@ h3, h4, h5, h6 {
 }
 
 #contact .contact-wrap form .capcha {
-    text-align: center;
-    align-self: center;
-    justify-self: center;
+    width: 100%;
 }
 
 /*=============== Footer Section ===============*/
@@ -367,4 +366,33 @@ h3, h4, h5, h6 {
 
 #services .services-box:nth-child(even) {
     background: var(--color6);
+}
+
+/* =============== Thank You Page =============== */
+#mess {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    background: var(--color5);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/*=============== Services Pages (Wood, Vinyl, Aluminum, Hardie, Eavestrough, Sofit/Fascia) ===============*/
+#services-main {
+    background: var(--color5);
+}
+
+#services-main .services-wrapper {
+    padding-bottom: 2rem;
+}
+
+#services-main .services-wrapper h2 {
+    padding: 1rem;
+}
+
+#services-main .services-wrapper ul {
+    list-style: disc;
+    padding-left: 2rem;
 }
