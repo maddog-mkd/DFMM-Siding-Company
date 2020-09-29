@@ -386,3 +386,21 @@ h3, h4, h5, h6 {
     list-style: disc;
     padding-left: 2rem;
 }
+
+/*=============== Location Pages (Burlington, Oakville, Hamilton...) ===============*/
+#location-main {
+    background: var(--color5);
+}
+
+#location-main .location-wrapper {
+    padding-bottom: 2rem;
+}
+
+#location-main .location-wrapper h2 {
+    padding: 1rem;
+}
+
+#location-main .location-wrapper ul {
+    list-style: disc;
+    padding-left: 2rem;
+}
