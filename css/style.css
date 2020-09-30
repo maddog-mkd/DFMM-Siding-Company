@@ -22,6 +22,10 @@ body {
 }
 
 /*=============== Utilities ===============*/
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0.4rem;
+}
+
 ul {
     list-style: none;
 }
@@ -31,24 +35,11 @@ a {
 }
 
 p {
-    padding: 10px;
+    padding: 1rem 0.4rem;
 }
 
 img {
     width: 100%;
-}
-
-/* i {
-    margin: 0.5rem 0;
-    color: var(--color2);
-} */
-
-h1, h2 {
-    padding: 2rem 0;
-}
-
-h3, h4, h5, h6 {
-    padding: 20px 0;
 }
 
 .btn {
@@ -77,18 +68,23 @@ h3, h4, h5, h6 {
     border-radius: 0.5rem;
 }
 
-.btn:hover {
+.btn-dark:hover {
     opacity: 0.7;
 }
 
 /* =============== Social Icons  =============== */
 #social-icons {
     text-align: center;
-    padding-bottom: 2rem;
+    padding: 5rem 0;
+}
+
+#social-icons h4 {
+    padding-bottom: 1rem;
 }
 
 #social-icons div img {
     width: 30px;
+    height: 30px;
     margin-left: 0.5rem;
 }
 
@@ -130,7 +126,7 @@ h3, h4, h5, h6 {
 
 #showcase:before {
     content: '';
-    background: url('../img/dfmm-siding-company-toronto.jpg') no-repeat center center/cover;
+    background: url('../img/dfmm-siding-company-cover.jpg') no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -157,6 +153,7 @@ h3, h4, h5, h6 {
 }
 
 /*=============== Pages Header ===============*/
+/* DA SE IZBRISE NA KRAJ --------------------------------------------------------------------------- */
 #p-header {
     width: 100%;
     height: 25vh;
@@ -175,80 +172,95 @@ h3, h4, h5, h6 {
 #about {
     text-align: center;
     background: var(--color5);
+    padding: 5rem 0;
 }
 
 #about h2 {
-    padding: 3rem 0;
+    padding-bottom: 3rem;
+}
+
+#about img {
+    width: 350px;
+    height: 350px;
 }
 
 /*=============== Why Us Section ===============*/
 #why-us {
     text-align: center;
     background: var(--color6);
-}
-
-#why-us .box {
-    padding-bottom: 2rem;
+    padding: 5rem 0;
 }
 
 #why-us h2 {
-    padding: 50px 0;
+    padding: 3rem 0;
+}
+
+#why-us .box {
+    padding: 3rem 0;
 }
 
 #why-us .box img {
     width: 100px;
+    height: 100px;
 }
 
 /*=============== Services-Intro Section ===============*/
 #services-intro {
     display: flex;
     flex-direction: column;
-    text-align: center;
     align-items: center;
     justify-content: center;
-    padding: 1rem 0;
-    background: var(--color1);
-    color: var(--color3);
+    text-align: center;
+    padding: 5rem 0;
 }
 
-#services-intro .services-intro-box {
+#services-intro h2 {
+    padding: 3rem 0;
+}
+
+#services-intro .ser-intro-box {
     display: flex;
     flex-direction: row;
+    padding: 2rem 1rem;
     align-items: center;
-    justify-content: space-between;
-    text-align: center;
+    justify-content: center;
+    background-color: var(--color6);
 }
 
-#services-intro .services-intro-box .s-a  {
+#services-intro .ser-intro-box:nth-child(even) {
+    background: var(--color5);
+}
+
+#services-intro .ser-intro-box .box-a {
+    padding-right: 1rem;
+}
+
+#services-intro .ser-intro-box .box-a img {
     width: 100px;
     height: 100px;
 }
 
-#services-intro .services-intro-box .s-a img {
-    width: auto;
-    height: auto;
-}
-
-#services-intro .services-intro-box .s-b {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-}
+/* #services-intro .ser-intro-box .box-b {
+    
+} */
 
 /*=============== Blog Section ===============*/
 #blog {
     text-align: center;
     background: var(--color5);
+    padding: 5rem 0;
+}
+
+#blog h2 {
+    padding: 3rem 0;
 }
 
 #blog .lattest-blog {
     padding-bottom: 2rem;
 }
 
-#blog h2 {
-    padding: 50px 0;
+#blog .lattest-blog h3 {
+    padding: 1rem 0;
 }
 
 /*=============== Contact Section ===============*/
@@ -258,7 +270,7 @@ h3, h4, h5, h6 {
 }
 
 #contact h2 {
-    padding: 50px 0;
+    padding: 5rem 0;
 }
 
 #contact .contact-wrap form .form-group {
@@ -281,31 +293,47 @@ h3, h4, h5, h6 {
     background: var(--color2);
 }
 
+#contact .secondary-contact {
+    padding: 2rem 0;
+}
+
+#contact .secondary-contact .sec-cont-box {
+    padding: 2rem 0;
+}
+
+#contact .secondary-contact .sec-cont-box img {
+    width: 50px;
+    height: 50px;
+}
+
+#contact .secondary-contact h3 {
+    padding: 0.5rem 0;
+}
+
 .map {
     width: 100%;
     height: 100%;
-}
-
-#contact .contact-wrap form .capcha {
-    width: 100%;
 }
 
 /*=============== Footer Section ===============*/
 #footer {
     text-align: center;
     font-size: small;
-    width: 100%;
     background: var(--color1);
     color: var(--color3);
 }
 
+#footer .locations h3 {
+    padding: 1rem 0;
+}
+
 #footer .locations ul {
-    padding-bottom: 10px;
+    padding-bottom: 0.9rem;
 }
 
 #footer .locations ul li {
     display: inline;
-    padding-right: 10px;
+    padding-right: 0.9rem;
 }
 
 #footer .locations ul li a {
@@ -318,45 +346,87 @@ h3, h4, h5, h6 {
 }
 
 /*=============== Blog Page ===============*/
-#blog-posts {
+#blog-posts h2 {
+    padding: 5rem 0;
     text-align: center;
 }
 
-.blog-box:nth-child(odd) {
-    background: var(--color5);
-}
-
-.blog-box:nth-child(even) {
-    background: var(--color6);
-}
-
 #blog-posts .blog-box {
-    padding-bottom: 1rem;
+    margin: 1rem;
+    background: var(--color5);
+    border-radius: 1rem;
 }
+
+#blog-posts .blog-box h2 {
+    padding: 2rem 0;
+}
+
 
 /*=============== New Page 1, 2, 3... ===============*/
 #new-page {
     text-align: center;
-    background: var(--color5);
     font-size: small;
 }
 
-/*=============== Services Page ===============*/
-#services {
+/* =============== About Page =============== */
+#main-about {
     text-align: center;
+    padding-top: 5rem;
+    margin: 1rem;
+    border-radius: 1rem;
     background: var(--color5);
 }
 
+#main-about h2 {
+    padding-bottom: 3rem;
+}
+
+#main-about img {
+    width: 350px;
+    height: 350px;
+}
+
+/* ============== Services Page ============== */
+#services {
+    text-align: center;
+}
+
+#services h2 {
+    padding: 5rem 0;
+}
+
 #services .services-box {
-    padding: 2rem 0;
+    background: var(--color6);
+    padding: 1rem 0;
+    margin: 1rem 1rem;
+    border-radius: 0.5rem;
+}
+
+#services .services-box h3 {
+    margin-top: 1rem;
 }
 
 #services .services-box img {
-    width: 100px;
+    width: 50px;
+    height: 50px;
+    margin-top: 1rem;
 }
 
-#services .services-box:nth-child(even) {
-    background: var(--color6);
+/* ============== Gallery Page ============== */
+/* #gallery {
+    
+} */
+
+/* #gallery .gall-wrap {
+
+} */
+
+#gallery .gall-wrap h1 {
+    text-align: center;
+    padding: 5rem 0;
+    border-radius: 1rem;
+    background: var(--color5);
+    margin: 1rem;
 }
 
 /* =============== Thank You Page =============== */
@@ -373,14 +443,15 @@ h3, h4, h5, h6 {
 /*=============== Services Pages (Wood, Vinyl, Aluminum, Hardie, Eavestrough, Sofit/Fascia) ===============*/
 #services-main {
     background: var(--color5);
+    padding: 5rem 0;
 }
 
-#services-main .services-wrapper {
-    padding-bottom: 2rem;
-}
+/* #services-main .services-wrapper {
+    padding: 0 0.4rem;
+} */
 
 #services-main .services-wrapper h2 {
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 #services-main .services-wrapper ul {
