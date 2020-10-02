@@ -5,6 +5,14 @@
     --color4: rgba(5,37,58, 0.7);
     --color5: #F6F6F6;
     --color6: #ddd;
+    --white: rgba(255,255,255,1);
+    --orange: rgba(255,108,9,1);
+    --orange1: rgba(255,108,9,0.6);
+    --blue: rgba(47,88,110,1);
+    --green: rgba(173,226,146,1);
+    --green1: rgba(159,215,2,1);
+    --yellow: rgba(247,238,0);
+    --grey: rgba(212,212,212,1);
     --menu-speed: 0.75s;
 }
 
@@ -27,6 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ul {
+    margin: 1rem 0;
     list-style: none;
 }
 
@@ -46,7 +55,7 @@ img {
     display: inline-block;
     border: none;
     background: var(--color2);
-    color: var(--color3);
+    color: var(--white);
     padding: 0.75rem 1.5rem;
     margin: 1.5rem 0;
     transition: opacity 1s ease-in-out;
@@ -61,7 +70,7 @@ img {
     display: inline-block;
     border: none;
     background: var(--color1);
-    color: var(--color3);
+    color: var(--white);
     padding: 0.75rem 1.5rem;
     margin: 1.5rem 0;
     transition: opacity 1s ease-in-out;
@@ -72,29 +81,32 @@ img {
     opacity: 0.7;
 }
 
-/* =============== Social Icons  =============== */
-#social-icons {
-    text-align: center;
-    padding: 5rem 0;
+.btn-special {
+    display: inline-block;
+    border: none;
+    background: var(--orange);
+    color: var(--white);
+    padding: 0.75rem 1.5rem;
+    margin: 1.5rem 0;
+    transition: opacity 1s ease-in-out;
+    border-radius: 0.5rem;
 }
 
-#social-icons h4 {
-    padding-bottom: 1rem;
+.btn-special:hover {
+    opacity: 0.7;
 }
 
-#social-icons div img {
-    width: 30px;
-    height: 30px;
-    margin-left: 0.5rem;
+.mark {
+    color: var(--orange);
 }
 
 /*=============== Navigation ===============*/
 .aw-logo {
-    color: var(--color2);
+    color: var(--orange);
 }
 
 .logo {
-    color: var(--color3);
+    color: var(--white);
 }
 
 #navigation {
@@ -119,7 +131,7 @@ img {
 
 #showcase {
     background: var(--color4);
-    color: var(--color3);
+    color: var(--white);
     height: 100vh;
     position: relative;
 }
@@ -152,125 +164,148 @@ img {
     font-size: 1.3rem;
 }
 
-/*=============== Pages Header ===============*/
-/* DA SE IZBRISE NA KRAJ --------------------------------------------------------------------------- */
-#p-header {
-    width: 100%;
-    height: 25vh;
-    background: var(--color3);
-}
-
-#p-header h2,
-#p-header h1 {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 100px;
-}
-
-/*=============== About Section ===============*/
+/* =============== About Section/Page =============== */
 #about {
     text-align: center;
-    background: var(--color5);
-    padding: 5rem 0;
+    padding-top: 3rem;
 }
 
 #about h2 {
-    padding-bottom: 3rem;
+    padding: 1rem 0;
 }
 
-#about img {
+#about .about-wrap img {
     width: 350px;
     height: 350px;
+    border-radius: 50%;
 }
 
 /*=============== Why Us Section ===============*/
 #why-us {
     text-align: center;
-    background: var(--color6);
-    padding: 5rem 0;
+    padding-top: 3rem;
 }
 
 #why-us h2 {
-    padding: 3rem 0;
+    padding: 1rem 0;
 }
 
-#why-us .box {
-    padding: 3rem 0;
+#why-us .why-wrap .why-box {
+    padding: 3rem 3rem;
+    margin: 1rem;
+    box-shadow: -0px 1px 7px 0px var(--grey);
+    border-radius: 1rem;
 }
 
-#why-us .box img {
+#why-us .why-wrap .why-box img {
     width: 100px;
     height: 100px;
+    margin-bottom: 1rem;
 }
 
-/*=============== Services-Intro Section ===============*/
-#services-intro {
+/* ============== Services Section ============== */
+#services {
+    text-align: center;
+    padding-top: 3rem;
+}
+
+#services h2 {
+    padding: 1rem 0;
+}
+
+#services .services-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    padding-top: 5rem;
 }
 
-#services-intro h2 {
-    padding: 3rem 0;
-}
-
-#services-intro .ser-intro-box {
+#services .services-wrap .services-box {
+    width: 95%;
+    box-shadow: -0px 1px 7px 0px var(--grey);
+    margin: 1rem;
     display: flex;
     flex-direction: row;
-    /* padding: 2rem 1rem; */
     align-items: center;
-    justify-content: space-evenly;
-    margin: 1rem;
-    background: var(--color6);
-    border-radius: 1rem;
-    width: 350px;
-    height: 150px;
+    border-radius: 5rem 5rem;
 }
 
-#services-intro .ser-intro-box .box-a {
-    margin-right: 1rem;
+#services .services-wrap .services-box h3 {
+    display: inline-block;
+    text-decoration: underline;
+    width: 70%;
 }
 
-#services-intro .ser-intro-box .box-a img {
-    width: 50px;
-    height: 50px;
+#services .services-wrap .services-box h3 a:hover {
+    font-size: 1.5rem;
+    transition: all 0.5s ease-in;
 }
 
-/* #services-intro .ser-intro-box .box-b {
-    
+#services .services-wrap .services-box img {
+    width: 30%;
+    display: inline-block;
+    height: 100px;
+    border-radius: 5rem 0 0 5rem;
+    margin: 1rem 0;
+}
+
+/* #services .services-wrap .services-box a {
+
 } */
 
 /*=============== Blog Section ===============*/
-#blog {
+#blog-posts {
     text-align: center;
-    background: var(--color5);
-    padding: 5rem 0;
+    padding-top: 3rem;
 }
 
-#blog h2 {
-    padding: 3rem 0;
-}
-
-#blog .lattest-blog {
-    padding-bottom: 2rem;
-}
-
-#blog .lattest-blog h3 {
+#blog-posts h2 {
     padding: 1rem 0;
+    text-align: center;
+}
+
+#blog-posts .article-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#blog-posts .article-wrap .blog-box {
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 1px 7px 0px var(--grey);
+}
+
+#blog-posts .article-wrap .blog-box img {
+    border-radius: 1rem 1rem 0 0;
+}
+
+#blog-posts .blog-box h3 {
+    margin: 1rem 0;
+}
+
+#blog-posts .article-wrap .blog-box .btn-special {
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+/*=============== New Page 1, 2, 3... ===============*/
+#new-page {
+    text-align: center;
+    font-size: small;
 }
 
 /*=============== Contact Section ===============*/
 #contact {
-    background: var(--color3);
+    background: var(--color6);
     text-align: center;
+    padding-top: 5rem;
 }
 
 #contact h2 {
-    padding: 5rem 0;
+    padding: 1rem 0;
 }
 
 #contact .contact-wrap form .form-group {
@@ -312,10 +347,9 @@ img {
 
 .map {
     width: 100%;
-    height: 100%;
 }
 
-/*=============== Footer Section ===============*/
+/*=============== Footer Section/Page ===============*/
 #footer {
     text-align: center;
     font-size: small;
@@ -323,17 +357,22 @@ img {
     color: var(--color3);
 }
 
-#footer .locations h3 {
+#footer .locations h2 img {
+    width: 25px;
+    height: 25px;
+}
+
+#footer .locations h2 {
     padding: 1rem 0;
 }
 
 #footer .locations ul {
-    padding-bottom: 0.9rem;
+    padding-bottom: 0.5rem;
 }
 
 #footer .locations ul li {
     display: inline;
-    padding-right: 0.9rem;
+    padding-right: 0.5rem;
 }
 
 #footer .locations ul li a {
@@ -341,142 +380,75 @@ img {
 }
 
 #footer .locations ul li a:hover {
-    color: var(--color3);
+    color: var(--orange);
     text-decoration: underline;
 }
 
-/*=============== Blog Page ===============*/
-#blog-posts {
+/* =============== Social Icons Section =============== */
+.social-icons {
     text-align: center;
 }
 
-#blog-posts h2 {
-    padding: 5rem 0;
-    text-align: center;
+.social-icons h4 {
+    margin-bottom: 1rem;
 }
 
-#blog-posts .blog-box {
-    margin: 1rem;
-    background: var(--color5);
-    border-radius: 1rem;
+.social-icons div img {
+    width: 20px;
+    height: 20px;
+    margin-left: 0.5rem;
 }
 
-#blog-posts .blog-box h2 {
-    padding: 2rem 0;
-}
-
-
-/*=============== New Page 1, 2, 3... ===============*/
-#new-page {
-    text-align: center;
-    font-size: small;
-}
-
-/* =============== About Page =============== */
-#main-about {
-    text-align: center;
-    padding-top: 5rem;
-    margin: 1rem;
-    border-radius: 1rem;
-    background: var(--color5);
-}
-
-#main-about h2 {
-    padding-bottom: 3rem;
-}
-
-#main-about img {
-    width: 350px;
-    height: 350px;
-}
-
-/* ============== Services Page ============== */
-#services {
-    text-align: center;
-}
-
-#services h2 {
-    padding: 5rem 0;
-}
-
-#services .services-box {
-    background: var(--color6);
-    padding: 1rem 0;
-    margin: 1rem 1rem;
-    border-radius: 0.5rem;
-}
-
-#services .services-box h3 {
-    margin-top: 1rem;
-}
-
-#services .services-box img {
-    width: 50px;
-    height: 50px;
-    margin-top: 1rem;
-}
-
-/* ============== Gallery Page ============== */
-/* #gallery {
-    
-} */
-
-/* #gallery .gall-wrap {
-
-} */
-
+/* =============== Gallery Page =============== */
 #gallery .gall-wrap h1 {
     text-align: center;
-    padding: 5rem 0;
+    padding: 2rem 0;
     border-radius: 1rem;
     background: var(--color5);
     margin: 1rem;
-}
-
-/* =============== Thank You Page =============== */
-#mess {
-    display: flex;
-    flex-direction: column;
-    height: 50vh;
-    background: var(--color5);
-    text-align: center;
-    align-items: center;
-    justify-content: center;
 }
 
 /*=============== Services Pages (Wood, Vinyl, Aluminum, Hardie, Eavestrough, Sofit/Fascia) ===============*/
-#services-main {
-    background: var(--color5);
-    padding: 5rem 0;
-}
-
-/* #services-main .services-wrapper {
-    padding: 0 0.4rem;
+/* #services-main {
+    
 } */
+
+#services-main .services-wrapper {
+    margin: 0rem 1rem;
+}
 
 #services-main .services-wrapper h2 {
     padding: 1rem 0;
 }
 
+/* #services-main .services-wrapper img {
+    
+} */
+
 #services-main .services-wrapper ul {
     list-style: disc;
-    padding-left: 2rem;
+    padding-left: 1rem;
 }
+
 
 /*=============== Location Pages (Burlington, Oakville, Hamilton...) ===============*/
-#location-main {
-    background: var(--color5);
+/* #location-page {
+    
+} */
+
+#location-page .loc-wrapper {
+    padding: 2rem;
+    text-align: center;
 }
 
-#location-main .location-wrapper {
-    padding-bottom: 2rem;
-}
+/* #location-page .loc-wrapper h1 {
+    
+} */
 
-#location-main .location-wrapper h2 {
-    padding: 1rem;
-}
+/* =============== Blog Post Page  =============== */
 
-#location-main .location-wrapper ul {
-    list-style: disc;
-    padding-left: 2rem;
-}
+
+
+
+
+
