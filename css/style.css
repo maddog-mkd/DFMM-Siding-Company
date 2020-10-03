@@ -44,7 +44,7 @@ a {
 }
 
 p {
-    padding: 1rem 0.4rem;
+    padding: 0.8rem 0.4rem;
 }
 
 img {
@@ -220,8 +220,17 @@ img {
     justify-content: center;
 }
 
-#services .services-wrap .services-box {
+#services .services-wrap a {
+    display: block;
     width: 95%;
+}
+
+#services .services-wrap a:hover {
+    font-size: 1.2rem;
+    transition: all .5s ease;
+}
+
+#services .services-wrap .services-box {
     box-shadow: -0px 1px 7px 0px var(--grey);
     margin: 1rem;
     display: flex;
@@ -232,26 +241,17 @@ img {
 
 #services .services-wrap .services-box h3 {
     display: inline-block;
-    text-decoration: underline;
+    color: var(--color1);
     width: 70%;
-}
-
-#services .services-wrap .services-box h3 a:hover {
-    font-size: 1.5rem;
-    transition: all 0.5s ease-in;
 }
 
 #services .services-wrap .services-box img {
     width: 30%;
     display: inline-block;
-    height: 100px;
+    height: 50px;
     border-radius: 5rem 0 0 5rem;
     margin: 1rem 0;
 }
-
-/* #services .services-wrap .services-box a {
-
-} */
 
 /*=============== Blog Section ===============*/
 #blog-posts {
@@ -299,41 +299,59 @@ img {
 
 /*=============== Contact Section ===============*/
 #contact {
-    background: var(--color6);
     text-align: center;
-    padding-top: 5rem;
+    padding-top: 3rem;
 }
 
 #contact h2 {
     padding: 1rem 0;
 }
 
-#contact .contact-wrap form .form-group {
+#contact .contact-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0 0 0;
+}
+
+#contact .contact-wrap .form-wrap {
+    width: 95%;
+    padding: 1rem 0;
+    border-radius: 1rem;
+    box-shadow: 0px 1px 7px 0px var(--grey);
+}
+
+#contact .contact-wrap .form-wrap form .form-group {
     margin: 0.75rem;
 }
 
-#contact .contact-wrap form .form-group label {
+#contact .contact-wrap .form-wrap form .form-group label {
     display: block;
 }
 
-#contact .contact-wrap form .form-group input,
-#contact .contact-wrap form .form-group textarea {
+#contact .contact-wrap .form-wrap form .form-group input,
+#contact .contact-wrap .form-wrap form .form-group textarea {
     width: 100%;
     padding: 0.5rem;
     border: 2px solid var(--color1);
     border-radius: 1rem;
 }
 
-#contact .contact-wrap form input:hover {
+#contact .contact-wrap .form-wrap form input:hover {
     background: var(--color2);
 }
 
 #contact .secondary-contact {
-    padding: 2rem 0;
+    padding: 1rem 0;
+    width: 95%;
+    border-radius: 1rem;
+    box-shadow: 0px 1px 7px 0px var(--grey);
+    margin: 1rem 0;
 }
 
 #contact .secondary-contact .sec-cont-box {
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 #contact .secondary-contact .sec-cont-box img {
@@ -354,7 +372,7 @@ img {
     text-align: center;
     font-size: small;
     background: var(--color1);
-    color: var(--color3);
+    color: var(--white);
 }
 
 #footer .locations h2 img {
@@ -409,41 +427,36 @@ img {
 }
 
 /*=============== Services Pages (Wood, Vinyl, Aluminum, Hardie, Eavestrough, Sofit/Fascia) ===============*/
-/* #services-main {
-    
-} */
-
-#services-main .services-wrapper {
-    margin: 0rem 1rem;
+#services-page {
+    padding-top: 3rem;
 }
 
-#services-main .services-wrapper h2 {
-    padding: 1rem 0;
+#services-page .services-page-wrap {
+    margin: 0rem 0.5rem;
 }
 
-/* #services-main .services-wrapper img {
-    
-} */
+#services-page .services-page-wrap h2 {
+    padding: 2rem 0 1rem 0;
+}
 
-#services-main .services-wrapper ul {
+#services-page .services-page-wrap img {
+    border-radius: 1rem;
+}
+
+#services-page .services-page-wrap ul {
     list-style: disc;
-    padding-left: 1rem;
+    margin-left: 1.5rem;
 }
-
 
 /*=============== Location Pages (Burlington, Oakville, Hamilton...) ===============*/
-/* #location-page {
-    
-} */
+#city {
 
-#location-page .loc-wrapper {
-    padding: 2rem;
-    text-align: center;
 }
 
-/* #location-page .loc-wrapper h1 {
-    
-} */
+#city .city-wrap h1 {
+    text-align: center;
+    margin: 3rem;
+}
 
 /* =============== Blog Post Page  =============== */
 
