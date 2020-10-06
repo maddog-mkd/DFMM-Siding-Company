@@ -9,27 +9,25 @@
     --orange: rgba(255,108,9,1);
     --orange1: rgba(255,108,9,0.6);
     --blue: rgba(47,88,110,1);
-    --green: rgba(173,226,146,1);
-    --green1: rgba(159,215,2,1);
-    --yellow: rgba(247,238,0);
     --grey: rgba(212,212,212,1);
     --menu-speed: 0.75s;
 }
 
-/*=============== Css Reset ===============*/
+/*=============== Css Reset ===============================*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/*=============== Core Styles ===============*/
+/*=============== Core Styles ===========================*/
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.4;
+    font-size: 16px;
 }
 
-/*=============== Utilities ===============*/
+/*=============== Utilities ================================*/
 h1, h2, h3, h4, h5, h6 {
     margin: 0 0.4rem;
 }
@@ -58,7 +56,7 @@ img {
     color: var(--white);
     padding: 0.75rem 1.5rem;
     margin: 1.5rem 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
     border-radius: 0.5rem;
 }
 
@@ -73,7 +71,7 @@ img {
     color: var(--white);
     padding: 0.75rem 1.5rem;
     margin: 1.5rem 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
     border-radius: 0.5rem;
 }
 
@@ -88,7 +86,7 @@ img {
     color: var(--white);
     padding: 0.75rem 1.5rem;
     margin: 1.5rem 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
     border-radius: 0.5rem;
 }
 
@@ -100,7 +98,7 @@ img {
     color: var(--orange);
 }
 
-/*=============== Navigation ===============*/
+/*=============== Navigation ====================================*/
 .aw-logo {
     color: var(--orange);
 }
@@ -121,7 +119,12 @@ img {
     padding: 10px 20px;
 }
 
-/*=============== Showcase ===============*/
+.proba {
+    width: 100%;
+    height: 60px;
+}
+
+/*=============== Showcase ========================================*/
 .container {
     max-width: 960px;
     margin: auto;
@@ -164,10 +167,53 @@ img {
     font-size: 1.3rem;
 }
 
-/* =============== About Section/Page =============== */
+/* S-Case For Pages =============== */
+#s-case {
+    background: var(--color4);
+    color: var(--white);
+    height: 60vh;
+    position: relative;
+}
+
+#s-case:before {
+    content: '';
+    background: url('../img/dfmm-siding-company-cover.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#s-case .s-case-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+#s-case h1 {
+    font-size: 2rem;
+}
+
+#s-case p {
+    font-size: 1.3rem;
+}
+
+
+/* =============== About Section ================================== */
 #about {
     text-align: center;
     padding-top: 3rem;
+}
+
+#about .about-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #about h2 {
@@ -175,12 +221,15 @@ img {
 }
 
 #about .about-wrap img {
-    width: 350px;
+    width: 320px;
     height: 350px;
-    border-radius: 50%;
 }
 
-/*=============== Why Us Section ===============*/
+#about .about-wrap p {
+    margin: 1rem;
+}
+
+/* =============== Why Us Section =================================== */
 #why-us {
     text-align: center;
     padding-top: 3rem;
@@ -190,20 +239,27 @@ img {
     padding: 1rem 0;
 }
 
+#why-us .why-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
 #why-us .why-wrap .why-box {
-    padding: 3rem 3rem;
+    padding: 1.5rem;
     margin: 1rem;
     box-shadow: -0px 1px 7px 0px var(--grey);
     border-radius: 1rem;
 }
 
 #why-us .why-wrap .why-box img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 1rem;
+    width: 50px;
+    height: 50px;
+    margin: 1rem 1rem;
 }
 
-/* ============== Services Section ============== */
+/* ============== Services Section ============================= */
 #services {
     text-align: center;
     padding-top: 3rem;
@@ -218,34 +274,24 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-#services .services-wrap a {
-    display: block;
-    width: 95%;
-}
-
-#services .services-wrap a:hover {
-    font-size: 1.2rem;
-    transition: all .5s ease;
-}
-
-#services .services-wrap .services-box {
-    box-shadow: -0px 1px 7px 0px var(--grey);
     margin: 1rem;
+}
+
+/* #services .services-wrap .test {
+    
+} */
+
+#services .services-wrap .test .services-box {
+    box-shadow: -0px 1px 7px 0px var(--grey);
+    margin: 1rem 0;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     border-radius: 5rem 5rem;
 }
 
-#services .services-wrap .services-box h3 {
-    display: inline-block;
-    color: var(--color1);
-    width: 70%;
-}
-
-#services .services-wrap .services-box img {
+#services .services-wrap .test .services-box img {
     width: 30%;
     display: inline-block;
     height: 50px;
@@ -253,7 +299,65 @@ img {
     margin: 1rem 0;
 }
 
-/*=============== Blog Section ===============*/
+#services .services-wrap .test .services-box h3 {
+    display: inline-block;
+    width: 70%;
+}
+
+#services .services-wrap .test .services-box h3 a {
+    color: var(--color1);
+}
+
+/*=============== Testimonials ====================================*/
+#testimonials {
+    padding-top: 3rem;
+    text-align: center;
+}
+
+#testimonials .testi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#testimonials .testi .testi-box {
+    border-radius: 1rem;
+    box-shadow: 0px 1px 7px 0px var(--grey);
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+#testimonials .testi .testi-box img {
+    width: 30px;
+    height: 30px;
+}
+
+#testimonials .testi .testi-box p {
+    font-style: italic;
+    font-size: small;
+}
+
+#testimonials .testi-box .testi-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#testimonials .testi-box .testi-1 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 1rem;
+}
+
+#testimonials .testi .testi-box .testi-1 h4 {
+    margin-left: 1rem;
+}
+
+/*=============== Blog Section / Index Page =========================*/
 #blog-posts {
     text-align: center;
     padding-top: 3rem;
@@ -267,8 +371,7 @@ img {
 #blog-posts .article-wrap {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin-top: 1rem;
 }
 
 #blog-posts .article-wrap .blog-box {
@@ -291,13 +394,60 @@ img {
     margin-bottom: 1rem;
 }
 
-/*=============== New Page 1, 2, 3... ===============*/
+/* =============== Blog Page ====================================== */
+#blog-page {
+    text-align: center;
+    padding-top: 3rem;
+}
+
+#blog-page h2 {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+#blog-page .blog-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#blog-page .blog-wrap .blog-page-box {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 1px 7px 0px var(--grey);
+}
+
+#blog-page .blog-wrap .blog-page-box img {
+    border-radius: 1rem 1rem 0 0;
+}
+
+#blog-page .blog-wrap .blog-page-box div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#blog-page .blog-wrap .blog-page-box h3 {
+    margin: 1rem 0;
+}
+
+#blog-page .blog-wrap .blog-page-box div .btn-special {
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+/*=============== New Page 1, 2, 3... ==================================*/
 #new-page {
     text-align: center;
     font-size: small;
 }
 
-/*=============== Contact Section ===============*/
+/*=============== Contact Section =====================================*/
 #contact {
     text-align: center;
     padding-top: 3rem;
@@ -311,8 +461,8 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     padding: 1rem 0 0 0;
+    margin-top: 1rem;
 }
 
 #contact .contact-wrap .form-wrap {
@@ -342,7 +492,11 @@ img {
     background: var(--color2);
 }
 
+/* =========================== Secondary Contact ================== */
 #contact .secondary-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 1rem 0;
     width: 95%;
     border-radius: 1rem;
@@ -351,7 +505,7 @@ img {
 }
 
 #contact .secondary-contact .sec-cont-box {
-    padding: 1rem 0;
+    padding: 3rem 0;
 }
 
 #contact .secondary-contact .sec-cont-box img {
@@ -363,11 +517,12 @@ img {
     padding: 0.5rem 0;
 }
 
+/* Map */
 .map {
     width: 100%;
 }
 
-/*=============== Footer Section/Page ===============*/
+/*=============== Footer Section/Page ==========================*/
 #footer {
     text-align: center;
     font-size: small;
@@ -402,7 +557,7 @@ img {
     text-decoration: underline;
 }
 
-/* =============== Social Icons Section =============== */
+/* =============== Social Icons Section ============================== */
 .social-icons {
     text-align: center;
 }
@@ -417,7 +572,7 @@ img {
     margin-left: 0.5rem;
 }
 
-/* =============== Gallery Page =============== */
+/* =============== Gallery Page ====================================== */
 #gallery .gall-wrap h1 {
     text-align: center;
     padding: 2rem 0;
@@ -449,9 +604,9 @@ img {
 }
 
 /*=============== Location Pages (Burlington, Oakville, Hamilton...) ===============*/
-#city {
+/* #city {
 
-}
+} */
 
 #city .city-wrap h1 {
     text-align: center;

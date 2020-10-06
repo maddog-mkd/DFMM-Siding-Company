@@ -1,3 +1,114 @@
-/* @media{
+/* Media Queries */
+@media(min-width: 768px) {
+    /* ======================================= About */
+    #about .about-wrap {
+        max-width: 1100px;
+        margin: auto;
+        flex-direction: row;
+        flex: 1;
+    }
 
-} */
+    #about .about-wrap .about-p {
+        margin-left: 2rem;
+    }
+    /* ======================================= Why Us */
+    #why-us {
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    #why-us .why-wrap {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    #why-us .why-wrap .why-box {
+        flex: 1;
+    }
+
+    /* ======================================== service */
+    #services {
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    #services .services-wrap {
+        flex-direction: row;
+    }
+
+    #services .services-wrap .test {
+        margin: 0 0.5rem;
+    }
+
+    #services .services-wrap .services-box:hover {
+        transform: rotate(3deg);
+        transition: all 0.5s ease;
+    }
+
+    #services .services-wrap .services-box:hover a:hover {
+        color: var(--orange);
+    }
+
+    /* ======================================== Testimonials */
+    #testimonials {
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    #testimonials .testi {
+        flex-direction: row;
+    }
+
+    #testimonials .testi .testi-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #testimonials .testi-box .testi-1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* ======================================== Blog */
+    #blog-posts {
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    #blog-posts .article-wrap {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* Contact */
+    #contact .secondary-contact {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    /* *************************************** Blog Page */
+    #blog-page {
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    #blog-page .blog-wrap .blog-page-box {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #blog-page .blog-wrap .blog-page-box img {
+        width: 400px;
+        height: auto;
+        border-radius: 1rem 0 0 1rem;
+    }
+
+
+    /* Services Page ( Wood, Vinyl, Aluminum, Hardie, Eavestrough, Sofit/Fascia ) */
+    #services-page {
+        max-width: 1100px;
+        margin: auto;
+    }
+}
