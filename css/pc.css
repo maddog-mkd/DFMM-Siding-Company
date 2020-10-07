@@ -1,17 +1,25 @@
 /* Media Queries */
 @media(min-width: 768px) {
-    /* ======================================= About */
+    /* Main Showcase */
+    #showcase h1 {
+        font-size: 4rem;
+    }
+
+    /* About Info / Page
+    ============================================================================= */
     #about .about-wrap {
         max-width: 1100px;
         margin: auto;
         flex-direction: row;
-        flex: 1;
     }
 
-    #about .about-wrap .about-p {
-        margin-left: 2rem;
+    #about .about-wrap img {
+        width: 300px;
+        height: 300px;
     }
-    /* ======================================= Why Us */
+
+    /* Why Us Info ( 3 )
+    ============================================================================= */
     #why-us {
         max-width: 1100px;
         margin: auto;
@@ -26,7 +34,8 @@
         flex: 1;
     }
 
-    /* ======================================== service */
+    /* Services Info / Page ( 6 )
+    ============================================================================= */
     #services {
         max-width: 1100px;
         margin: auto;
@@ -49,7 +58,8 @@
         color: var(--orange);
     }
 
-    /* ======================================== Testimonials */
+    /* Testimonials Info ( 3 )
+    ============================================================================= */
     #testimonials {
         max-width: 1100px;
         margin: auto;
@@ -70,7 +80,8 @@
         align-items: center;
     }
 
-    /* ======================================== Blog */
+    /* Blog Info ( 3 )
+    ============================================================================= */
     #blog-posts {
         max-width: 1100px;
         margin: auto;
@@ -81,14 +92,35 @@
         align-items: center;
     }
 
-    /* Contact */
-    #contact .secondary-contact {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
+    /* Contact Info / Page
+    ============================================================================= */
+    #contact {
+        max-width: 1100px;
+        margin: auto;
     }
 
-    /* *************************************** Blog Page */
+    #contact .contact-wrap {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    #contact .contact-wrap .form-wrap {
+        width: 50%;
+        /* padding-left: 3rem; */
+    }
+
+    #contact .contact-wrap .secondary-contact {
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+    }
+
+    #contact .contact-wrap .secondary-contact .sec-cont-box {
+        padding: 0.5rem 0;
+    }
+
+    /* Blog Page
+    ============================================================================= */
     #blog-page {
         max-width: 1100px;
         margin: auto;
@@ -105,8 +137,15 @@
         border-radius: 1rem 0 0 1rem;
     }
 
+    /* Gallery
+    ============================================================================= */
+    .gallery {
+        max-width: 1100px;
+        margin: auto;
+    }
 
-    /* Services Page ( Wood, Vinyl, Aluminum, Hardie, Eavestrough, Sofit/Fascia ) */
+    /* Services Page ( Wood, Vinyl, Aluminum, Hardie, Eavestrough, Sofit/Fascia )
+    ============================================================================= */
     #services-page {
         max-width: 1100px;
         margin: auto;
