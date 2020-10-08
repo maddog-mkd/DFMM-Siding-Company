@@ -670,7 +670,7 @@ img {
     transform: scale(1.025);
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .gallery {
       grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
     }
@@ -680,7 +680,7 @@ img {
     .gallery {
       grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
     }
-}
+} */
 
 @-moz-keyframes zoomin {
     0% {
