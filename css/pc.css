@@ -144,9 +144,9 @@
         margin: auto;
     }
 
-    .gallery {
+    /* .gallery {
         grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-      }
+      } */
 
       /* .gallery {
         grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
