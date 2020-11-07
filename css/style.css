@@ -310,6 +310,7 @@ img {
     height: 40px;
     /* border-radius: 5rem 0 0 5rem; */
     margin: 1rem 0;
+    filter: invert(47%) sepia(98%) saturate(1796%) hue-rotate(352deg) brightness(97%) contrast(108%);
 }
 
 #services .services-wrap .test .services-box h3 {
@@ -461,6 +462,7 @@ img {
 ============================================================================= */
 #new-page {
     text-align: center;
+    padding: 3rem 0;
     font-size: small;
 }
 
@@ -793,8 +795,23 @@ img {
     margin: 3rem;
 }
 
-/* Blog Post 
+/* Post 
 ============================================================================= */
+#post .post-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#post .post-wrap h2 {
+    padding: 3rem 0 0.5rem 0;
+}
+
+#post .post-wrap img {
+    border-radius: 1rem;
+    margin: 1rem 0;
+}
 
 
 
