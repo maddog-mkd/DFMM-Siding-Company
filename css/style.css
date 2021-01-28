@@ -804,13 +804,80 @@ img {
     justify-content: center;
 }
 
+#post .post-wrap .line {
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    border-top: solid var(--grey) 1px;
+    border-bottom: solid var(--grey) 1px;
+    font-size: x-small;
+    text-transform: uppercase;
+}
+
+#post .post-wrap .line .c {
+    background-color: var(--grey);
+    padding: 0.5rem;
+    margin-right: .2rem;
+ }
+
+ #post .post-wrap .line .b {
+     margin-right: .2rem;
+ }
+
+ #post .post-wrap .line .c a {
+     color: var(--color1);
+ }
+
+#post .post-wrap h1 {
+    margin: 3rem 1rem 3rem 1rem;
+    font-size: xx-large;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 #post .post-wrap h2 {
     padding: 3rem 0 0.5rem 0;
+    text-align: center;
 }
 
 #post .post-wrap img {
-    border-radius: 1rem;
+    margin: .5rem 0;
+}
+
+#post .post-wrap ol, 
+#post .post-wrap ul {
     margin: 1rem 0;
+}
+
+#post .post-wrap .tag {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px solid var(--grey);
+    border-bottom: 1px solid var(--grey);
+    padding: .5rem;
+    font-size: xx-small;
+}
+
+#post .post-wrap .tags1 {
+    background-color: var(--grey);
+    padding: .5rem;
+    color: var(--color1);
+}
+
+#post .post-wrap .tags2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#post .post-wrap .tags2 a {
+    margin: .3rem;
+    background-color: var(--grey);
+    padding: .5rem;
+    color: var(--color1);
 }
 
 
